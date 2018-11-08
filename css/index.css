@@ -1,0 +1,261 @@
+#header
+{
+    height: 41px;
+    width: 100%;
+    /*background-color: darkred;*/
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+#title
+{
+    height: 38px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+}
+#body
+{
+    height: 150px;
+    width: 100%;
+
+    flex: 1;
+    overflow: scroll;
+}
+#footer
+{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+
+}
+li{
+    height: 80px;
+}
+.border1
+{
+    border:1px solid black;
+}
+#header #signal
+{
+    /*width: 126px;*/
+    height: 41px;
+    flex: 0.3;
+}
+#header #time
+{
+    /*width: 41px;*/
+    height: 41px;
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+#header #battery
+{
+    height: 41px;
+    flex: 0.3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#signal div
+{
+    width: 5px;
+    height: 5px;
+    border:1px solid white;
+    border-radius: 50%;
+    margin-left: 1px;
+}
+#signal div:first-child
+{
+    margin-left: 10px;
+}
+#signal
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.haveSignal
+{
+    background-color: whitesmoke;
+}
+#signal span
+{
+    font-size: 8px;
+    display: inline-block;
+    margin-right:10px;
+    color: white;
+}
+
+#battery #outlineBorder
+{
+    width: 40px;
+    height: 15px;
+    border: 1px solid whitesmoke;
+}
+#battery #inlineBorder
+{
+    margin-top: 2px;
+    width:35px;
+    height: 11px;
+    background-color:green;
+    margin-left: 2px;
+}
+#battery #button1
+{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    -webkit-border-radius: 0px 1px 1px 0px ;
+    -moz-border-radius: 0px 1px 1px 0px ;
+    border-radius: 0px 1px 1px 0px ;
+}
+#title div
+{
+    width: 100px;
+    height: 38px;
+    background-color: black;
+    color: white;
+
+}
+#title_left
+{
+    flex: 0.3;
+
+}
+#title_center
+{
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title_right
+{
+    flex: 0.3;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+#title_right img
+{
+    width: 29px;
+    height: 31px;
+    margin-top: 6px;
+    margin-right: 40%;
+
+}
+#title_right #floatBox
+{
+    width: 123px;
+    height: 138px;
+    background-color: blue;
+    position: absolute;
+    top: 38px;
+    right: 0px;
+}
+#floatBox ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#floatBox ul li
+{
+    width: 100%;
+    height: 44px;
+}
+#floatBox ul li:hover
+{
+   background-color: white;
+}
+#body ul li
+{
+    border-bottom: 1px solid whitesmoke;
+    height: 64px;
+}
+#footer div
+{
+    flex: 0.25;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#footer img
+{
+    width:37px;
+    height: 37px;
+}
+#footer .message
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 9px;
+    left: 52px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 5;
+    color: white;
+}
+.chatLeft
+{
+    height: 55px;
+    width: 64px;
+    margin-left: 4px;
+    background-image: url(../imgs/neuedu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.chatRight
+{
+    height: 55px;
+    margin-right: 4px;
+    flex: 1;
+    display: flex;
+}
+.chatMes
+{
+    display: flex;
+    align-items: center;
+}
+.charRightLeft
+{
+    flex: 1;
+    height: 55px;
+
+    padding-left: 5px;
+}
+.charRightRight
+{
+    width: 60px;
+    height: 55px;
+}
+.charRightLeftTop
+{
+
+    font-size: 20px;
+    font-weight: 500;
+}
+.charRightLeftBottom
+{
+    color: gray;
+}
+.charRightRight1
+{
+    height: 26px;
+    font-size: 1px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
