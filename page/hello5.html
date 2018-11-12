@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body
+        {
+            border: 1px solid blue;
+        }
+        div
+        {
+            padding: 100px;
+        }
+        div:first-child
+        {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+        }
+        div:nth-child(2)
+        {
+            width: 800px;
+            height: 800px;
+        }
+        div:nth-child(3)
+        {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            document.onkeydown = function () {
+                console.log(event.keyCode);
+            ]
+        }
+        // function clickdemo()
+        // {
+        //     alert("最小的");
+        //     event.cancelBubble = true;
+        // }
+    </script>
+</head>
+<body>
+    <div onclick="alert('最小的3')">sdasds
+        <div style="background-color: red" onclick="alert('最小的2')">dsadas
+            <div onclick="clickdemo()" style="background-color: green">dsadas</div>
+        </div>
+    </div>
+</body>
+</html>

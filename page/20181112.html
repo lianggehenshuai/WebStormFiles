@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <select id="pros">
+        <option></option>
+    </select>
+
+    <select id="citys">
+        <option></option>
+    </select>
+
+    <select id="countys">
+        <option></option>
+    </select>
+
+    <script>
+        var pro1  = document.getElementById("pros");
+        var city1  = document.getElementById("citys");
+        var countys  = document.getElementById("countys");
+
+
+        var pro = ["山西","天津"];
+        var city = [
+            ["晋中","太原"],
+            ["空港","河东"]
+        ];
+        var county = [
+            [
+                ["寿阳","榆次"],
+                ["万柏林","小店"]
+            ]
+        ]
+
+
+        function addArea(areas,area) {
+           for(var i=0;i<areas.length;i++)
+           {
+               var options = new Option(areas[i],i);
+               area.appendChild(options);
+           }
+        }
+
+        addArea(pro,pro1);
+
+        var middleArray;
+        pro1.onchange = function () {
+            city1.options.length=0;
+            console.log("sas");
+            var index = this.value;
+            var citys =  city[index];
+            middleArray = county[index];
+            addArea(citys,city1);
+        }
+
+        city1.onchange = function () {
+            countys.options.length=0;
+
+            var index = this.value;
+            var cous =  middleArray[index];
+            addArea(cous,countys);
+        }
+
+
+    </script>
+
+
+</body>
+</html>
